@@ -45,8 +45,6 @@ if(!config.miner_key || config.miner_key === 'your miner key') {
     process.exit(1); 
 }
 
-// console.log('publicKeyPath: ', publicKeyPath, publicKeyPem);
-
 const encryptedData = encryptWithPublicKey(publicKeyPem, config.miner_key); 
 
 // console.log(await client.status().do());
